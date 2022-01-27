@@ -1,7 +1,7 @@
-<!-- <%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %> -->
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,8 +15,8 @@
     <body>
         <h3>Dojos</h3>
 
-        <a href="newninja.jsp">new ninja</a>
-        <a href="newdojo.jsp">new dojo</a>
+        <a href="/newninja">new ninja</a>
+        <a href="/newdojo">new dojo</a>
 
         <table>
             <th>
@@ -32,7 +32,7 @@
                         <td>
                             <c:out value="${dojo.name}"/>
                         </td>
-                        <c:forEach items="${ninjas}" var="ninja">
+                        <c:forEach items="${ninjas}" var="dojo">
                             <td>
                                 <c:out value="${ninja.first_name}"/>
                             </td>
